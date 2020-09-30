@@ -13,9 +13,7 @@ fs.readdirSync('node_modules')
 
 module.exports = {
   externals: nodeModules,
-  entry: [
-    './src/main.js'
-  ],
+  entry: ['./src/main.js'],
   target: 'node',
   output: {
     path: __dirname,
@@ -44,7 +42,7 @@ module.exports = {
       },
       {
         test: /\.md$/,
-        loader: 'html!markdown' 
+        loader: 'html!markdown'
       }
     ]
   },
